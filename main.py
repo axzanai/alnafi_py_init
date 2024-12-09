@@ -1,3 +1,24 @@
+import config
+
+config.create_file("nafi0.py")
+
+config.remove_file("nafi0.py")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # my_dic = {'first':1, 'second': 2}
 # if "second" in my_dic:
 #     print("Key 'second' exist")
@@ -51,7 +72,3 @@
 #         print(f"Anexpected exception {e}.")
 
 # create_file("nafi.ipynb")
-
-
-import os
-os.rename("nafi.py", "main.py")
