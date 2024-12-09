@@ -1,17 +1,24 @@
 import os 
 
 def rename_file(srcname, dstname):
-    
     try:
-        os.rename(srcname, dstname)
-        print("File name updated.")
-    except Exception as e:
-        print(f"An unexpected error: {e}")
+        if not os.path.exists(srcname):
+            print(f"Source file {srcname} does not exist.")
+            return
         
-rename_file("demo.py", "memmo.py")
+        if os.path.exists(dstname):
+            print(f"Destination file {dstname} already exist.")
+        
+        os.rename(srcname, dstname)
+        print(f"File name updated from {srcname} to {dstname}.")
+    except FileExistsError:
+        print(f"File {srcname} not found.")
+    except PermissionError:
+        print("Permission denied. Check your file permissions.")
+    except Exception as e:
+        print(f"An unexpected error occured: {e}")
 
-
-# def remove_file(filename = input("Enter file name?")):
+# def remove_file(filename):
 #     try:
 #         os.remove(filename)
 #         print(f"The file {filename} has been removed.")
