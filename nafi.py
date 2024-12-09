@@ -31,13 +31,24 @@
 # print(x.pop(2))
 # print(x)
 
-name = "ArslAN"
-print(name.lower())
+# name = "ArslAN"
+# print(name.lower())
 
 
-dic = {"std1": "Maaz Shah", "std2": "Zayyan Khan", "std3":"Maaz Ahmed"}
-print(dic.get("std2"))
+# dic = {"std1": "Maaz Shah", "std2": "Zayyan Khan", "std3":"Maaz Ahmed"}
+# print(dic.get("std2"))
 
-from math import sqrt
-print(sqrt(2))
+# from math import sqrt
+# print(sqrt(2))
 
+def create_file(filename):
+    filename = str(filename)
+    try:
+        with open(filename, 'w') as f:
+            f.write("Hello!")
+        print(f"The file {filename} is created.")
+    except Exception as e:
+        print(f"Anexpected exception {e}.")
+
+create_file("nafi.ipynb")
+        
