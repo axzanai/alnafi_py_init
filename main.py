@@ -41,14 +41,17 @@
 # from math import sqrt
 # print(sqrt(2))
 
-def create_file(filename):
-    filename = str(filename)
-    try:
-        with open(filename, 'w') as f:
-            f.write("Hello!")
-        print(f"The file {filename} is created.")
-    except Exception as e:
-        print(f"Anexpected exception {e}.")
+# def create_file(filename):
+#     filename = str(filename)
+#     try:
+#         with open(filename, 'w') as f:
+#             f.write("Hello!")
+#         print(f"The file {filename} is created.")
+#     except Exception as e:
+#         print(f"Anexpected exception {e}.")
 
-create_file("nafi.ipynb")
-        
+# create_file("nafi.ipynb")
+
+
+import os
+os.rename("nafi.py", "main.py")
