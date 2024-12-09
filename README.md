@@ -1,7 +1,6 @@
-# Python Practice Project
-
+# Python Project
 ---
-## Git Practice (VCS - Version Control System) 
+- Git - Version Control System
+- Al Nafi (Python by Sana Rasheed)
 
-[Learning_Resource](https://chatgpt.com/)
 
