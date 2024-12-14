@@ -1,2 +1,4 @@
 nafi/
 python==3.11/
+
+.ipynb_checkpoints/
