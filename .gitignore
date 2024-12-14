@@ -8,6 +8,7 @@ __pycache__/
 *checkpoint.ipynb
 
 # Distribution / packaging
+python==3.11/
 .Python
 build/
 develop-eggs/
